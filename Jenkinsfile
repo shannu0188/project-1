@@ -29,7 +29,11 @@ pipeline{
                 sh 'cal'
             }
         } 
-        
+        stage('date and time'){
+            steps{
+                sh 'date'
+            }
+        }
 
     }
 }
