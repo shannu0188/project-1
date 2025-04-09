@@ -34,6 +34,11 @@ pipeline{
                 sh 'date'
             }
         }
+        stage('insatll httpd'){
+            steps{
+                sh 'yum install https'
+            }
+        }
 
     }
 }
