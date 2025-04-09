@@ -36,18 +36,6 @@ pipeline{
                 sh 'date'
             }
         }
-        stage('chgange'){
-            steps{
-                sh 'hostname master slave'
-            }
-        }
-        stage('changes'){
-            steps{
-                sh 'bash'
-            }
-        }
-            
-
-
+       
     }
 }
