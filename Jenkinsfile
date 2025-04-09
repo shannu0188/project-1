@@ -24,7 +24,7 @@ pipeline{
                 sh 'lscpu'
             }
         }
-        stage( memory usage){
+        stage('memory usage'){
             step{
                 sh 'free -h'
             }
