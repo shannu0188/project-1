@@ -3,7 +3,7 @@ pipeline{
     agent any
 
     stages{
-        stage('hostname'){
+        stage(' server hostname'){
             step{
                 sh 'hostname'
             }
@@ -20,9 +20,6 @@ pipeline{
             }
         }
         stage('server cpu details'){
-        
-        
-            
             step {
                 sh 'lscpu'
             }
