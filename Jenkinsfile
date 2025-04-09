@@ -24,9 +24,9 @@ pipeline{
                 sh 'lscpu'
             }
         }
-        stage('memory usage'){
+        stage('calender'){
             steps{
-                sh 'free -h'
+                sh 'cal'
             }
         } 
         
