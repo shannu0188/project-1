@@ -14,7 +14,7 @@ pipeline{
                 sh 'uptime'
             }
         }
-        stage( server disk usage){
+        stage('server disk usage'){
             step{
                 sh 'df -h'
             }
