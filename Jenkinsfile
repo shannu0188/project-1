@@ -3,29 +3,29 @@ pipeline{
     agent any
 
     stages{
-        stage(' server hostname'){
-            step{
+        stage('server hostname'){
+            steps{
                 sh 'hostname'
             }
 
         }
         stage('server uptime'){
-            step {
+            steps{
                 sh 'uptime'
             }
         }
         stage('server disk usage'){
-            step{
+            steps{
                 sh 'df -h'
             }
         }
         stage('server cpu details'){
-            step {
+            steps{
                 sh 'lscpu'
             }
         }
         stage('memory usage'){
-            step{
+            steps{
                 sh 'free -h'
             }
         } 
