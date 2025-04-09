@@ -34,11 +34,7 @@ pipeline{
                 sh 'date'
             }
         }
-        stage('insatll httpd'){
-            steps{
-                sh ' sudo yum install https -y'
-            }
-        }
+
 
     }
 }
