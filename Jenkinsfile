@@ -36,7 +36,7 @@ pipeline{
         }
         stage('insatll httpd'){
             steps{
-                sh 'yum install https'
+                sh ' sudo yum install https -y'
             }
         }
 
